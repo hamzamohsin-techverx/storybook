@@ -11,6 +11,11 @@ const meta: Meta = {
         type: 'text',
       },
     },
+    background: {
+      control: {
+        type: 'number',
+      }
+    },
   },
   parameters: {
     controls: { expanded: true },

@@ -1,0 +1,59 @@
+import {ArgsTable, Meta, Story, Canvas} from '@storybook/addon-docs';
+import {Button, Props} from '../src/Button';
+
+<Meta title="Components/Button" component={Button} />
+
+
+export const Template = (args) => <Button {...args} />;
+
+
+# filled Button
+
+Lets define a story for our `Button` component:
+
+<Story name="filled"  args={{ children:'I am in MDX'}} >
+    {Template.bind({})}
+</Story>
+
+
+<ArgsTable story="filled" />
+
+# outlined Button
+
+<Canvas>
+    <Story name="outlined" args={{ children: 'MDX outlined', variant: 'outlined'}}>
+      {Template.bind({})}
+    </Story>
+</Canvas>
+
+<ArgsTable story="outlined" />
+
+# Link Button
+
+<Canvas>
+    <Story name="link" args={{children: 'MDX Link', variant: 'link'}}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<ArgsTable story="link" />
+
+# Large Button
+
+<Canvas>
+    <Story name="large" args={{children: 'Large Button', variant: 'large'}}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<ArgsTable story="small" />
+
+# Small Button
+
+<Canvas>
+    <Story name="small" args={{children: 'Small Button', variant: 'small'}}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<ArgsTable story="small" />
