@@ -14,7 +14,15 @@ interface Props {
   // variant?: string;
 }
 
-const ButtonComp = ({ color, label, icon, className, disabled, size, onClick }: Props) => (
+const ButtonComp = ({
+  color,
+  label,
+  icon,
+  className,
+  disabled,
+  size,
+  onClick,
+}: Props) => (
   <ThemeProvider theme={buttonTheme}>
     <Button
       color={color}
@@ -22,7 +30,8 @@ const ButtonComp = ({ color, label, icon, className, disabled, size, onClick }: 
       className={className}
       disabled={disabled}
       size={size}
-      onClick={onClick}>
+      onClick={onClick}
+    >
       {label}
     </Button>
   </ThemeProvider>

@@ -20,7 +20,8 @@ const buttonTheme = createTheme({
             fontWeight: '900',
             '&:hover': {
               backgroundColor: COLOR.neutral900,
-              boxShadow: '0px 8px 24px -4px rgba(40, 133, 246, 0.1), 0px 8px 8px -4px rgba(40, 133, 246, 0.04)',
+              boxShadow:
+                '0px 8px 24px -4px rgba(40, 133, 246, 0.1), 0px 8px 8px -4px rgba(40, 133, 246, 0.04)',
             },
             '&:focus': {
               border: `2px solid ${COLOR.neutral900}`,
@@ -39,7 +40,8 @@ const buttonTheme = createTheme({
             backgroundColor: COLOR.neutral50,
             '&:hover': {
               backgroundColor: COLOR.neutral100,
-              boxShadow: '0px 8px 24px -4px rgba(40, 133, 246, 0.1), 0px 8px 8px -4px rgba(40, 133, 246, 0.04)',
+              boxShadow:
+                '0px 8px 24px -4px rgba(40, 133, 246, 0.1), 0px 8px 8px -4px rgba(40, 133, 246, 0.04)',
             },
             '&:disabled': {
               color: COLOR.white,
