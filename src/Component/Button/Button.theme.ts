@@ -16,7 +16,7 @@ const buttonTheme = createTheme({
           props: { color: 'primary' },
           style: {
             color: COLOR.white,
-            backgroundColor: COLOR.neutral600,
+            backgroundColor: COLOR.primary800,
             fontWeight: '900',
             '&:hover': {
               backgroundColor: COLOR.neutral900,
